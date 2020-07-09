@@ -1,0 +1,2 @@
+body{margin:0}.NavLink:hover{color:orange;border-top:10px solid orange;transition:all .5s;cursor:pointer}.NavLink{border-top:10px solid rgba(0,0,0,.85);height:100%;flex-direction:column;padding-left:25px;padding-right:25px}.NavLink,.NavLinkMobile{display:flex;justify-content:center;transition:all .5s;color:#fff;text-decoration:none}.NavLinkMobile{outline:1px solid #fff;align-items:center;height:13%}.NavLinkMobile:hover{color:orange;transition:all .5s}.linkClean{text-decoration:none;color:inherit}
+/*# sourceMappingURL=main.cc2a0c7f.chunk.css.map */

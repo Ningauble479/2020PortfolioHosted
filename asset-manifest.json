@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/2020PortfolioHosted/static/css/main.d7446ac7.chunk.css",
-    "main.js": "/2020PortfolioHosted/static/js/main.8e4d035b.chunk.js",
-    "main.js.map": "/2020PortfolioHosted/static/js/main.8e4d035b.chunk.js.map",
+    "main.css": "/2020PortfolioHosted/static/css/main.cc2a0c7f.chunk.css",
+    "main.js": "/2020PortfolioHosted/static/js/main.90840249.chunk.js",
+    "main.js.map": "/2020PortfolioHosted/static/js/main.90840249.chunk.js.map",
     "runtime-main.js": "/2020PortfolioHosted/static/js/runtime-main.35e657fd.js",
     "runtime-main.js.map": "/2020PortfolioHosted/static/js/runtime-main.35e657fd.js.map",
-    "static/js/2.2ece10c6.chunk.js": "/2020PortfolioHosted/static/js/2.2ece10c6.chunk.js",
-    "static/js/2.2ece10c6.chunk.js.map": "/2020PortfolioHosted/static/js/2.2ece10c6.chunk.js.map",
+    "static/js/2.221cafa0.chunk.js": "/2020PortfolioHosted/static/js/2.221cafa0.chunk.js",
+    "static/js/2.221cafa0.chunk.js.map": "/2020PortfolioHosted/static/js/2.221cafa0.chunk.js.map",
     "index.html": "/2020PortfolioHosted/index.html",
-    "precache-manifest.a056b71826cd3f424ccf7c9b3da01091.js": "/2020PortfolioHosted/precache-manifest.a056b71826cd3f424ccf7c9b3da01091.js",
+    "precache-manifest.1df96b1c5932645a40c65d950837fa9e.js": "/2020PortfolioHosted/precache-manifest.1df96b1c5932645a40c65d950837fa9e.js",
     "service-worker.js": "/2020PortfolioHosted/service-worker.js",
-    "static/css/main.d7446ac7.chunk.css.map": "/2020PortfolioHosted/static/css/main.d7446ac7.chunk.css.map",
-    "static/js/2.2ece10c6.chunk.js.LICENSE.txt": "/2020PortfolioHosted/static/js/2.2ece10c6.chunk.js.LICENSE.txt"
+    "static/css/main.cc2a0c7f.chunk.css.map": "/2020PortfolioHosted/static/css/main.cc2a0c7f.chunk.css.map",
+    "static/js/2.221cafa0.chunk.js.LICENSE.txt": "/2020PortfolioHosted/static/js/2.221cafa0.chunk.js.LICENSE.txt",
+    "static/media/DnDProject.png": "/2020PortfolioHosted/static/media/DnDProject.bddc459f.png",
+    "static/media/RanchersBest.png": "/2020PortfolioHosted/static/media/RanchersBest.cb2dac21.png",
+    "static/media/RoshiHealth.png": "/2020PortfolioHosted/static/media/RoshiHealth.d4d18a2a.png",
+    "static/media/Tasky.png": "/2020PortfolioHosted/static/media/Tasky.77758e9a.png",
+    "static/media/wp1828901-programmer-wallpapers.jpg": "/2020PortfolioHosted/static/media/wp1828901-programmer-wallpapers.44bd7153.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.35e657fd.js",
-    "static/js/2.2ece10c6.chunk.js",
-    "static/css/main.d7446ac7.chunk.css",
-    "static/js/main.8e4d035b.chunk.js"
+    "static/js/2.221cafa0.chunk.js",
+    "static/css/main.cc2a0c7f.chunk.css",
+    "static/js/main.90840249.chunk.js"
   ]
 }
