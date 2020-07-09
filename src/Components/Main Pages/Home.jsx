@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Grid, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import BackgroundImage from '../../Images/wp1828901-programmer-wallpapers.jpg'
 
 const useStyles = makeStyles({
     root: {
@@ -20,7 +21,7 @@ export default function Home(){
     const styles = useStyles()
 
     return(
-        <Box pl='13vw' className={styles.root}>
+        <Box pl='13vw' style={{backgroundImage:`url(${BackgroundImage})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'left'}} className={styles.root}>
             <Grid container direction='column' justify='center' className={styles.fullBox}>
                 <Box mb={6}>
                     <Typography variant='h4' >

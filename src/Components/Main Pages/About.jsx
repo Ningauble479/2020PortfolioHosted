@@ -29,25 +29,27 @@ export default function About(){
     const styles = useStyles()
 
     return(
-        <Grid className={styles.fullBox} justify='space-between' container>
-            <Box className={styles.centeredPic} width='50%'>
+        <Box className={styles.fullBox} overflow='auto'>
+        <Grid className={styles.fullBox} container>
+            <Grid item className={styles.centeredPic} xs={12} lg={6}>
                 <Box className={styles.picture}>
                     Picture did not load
                 </Box>
-            </Box>
-            <Box width='50%'>
-                <Grid container direction='column' style={{paddingRight: '15vw'}} className={[styles.fullBox , styles.center]}>
-                    <Box width='100%' pb={5} textAlign='right'>
+            </Grid>
+            <Grid item container justify='center' xs={12} lg={6}>
+                <Grid container direction='column' style={{width: '75%'}} className={[styles.fullBox , styles.center]}>
+                    <Box width='100%' pb={5} textAlign='center'>
                         <Typography variant='h2'>
                             About Me
                         </Typography>
                     </Box>
-                    <Box textAlign='right'>
-                        <Typography variant='h5'>Full Stack Web Developer with a background in Information Technology and life-long dedication to learning. Effective at combining creativity and problem solving to develop user-friendly applications. Known among staff for strong wit and attention to detail no matter the complexity of the project. 3+ years of expierenced programming.</Typography>
+                    <Box textAlign='center'>
+                        <Typography variant='h5'>Full Stack Web Developer with a background in Information Technology and life-long dedication to learning. Effective at combining creativity and problem solving to develop user-friendly applications. Known among staff for strong wit and attention to detail no matter the complexity of the project. 3+ years of experienced programming.</Typography>
                     </Box>
 
                 </Grid>
-            </Box>
+            </Grid>
         </Grid>
+        </Box>
     )
 }

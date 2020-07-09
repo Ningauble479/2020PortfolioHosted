@@ -38,7 +38,7 @@ const descriptions = {
 
 function SkillBox(props){
     return(
-        <Box display='flex' flexDirection='column' width='30%' height='250px'>
+        <Grid item lg={4} md={6} xs={12} display='flex' flexDirection='column'>
             <Box display='flex' pb={2}>
                 <Box display='flex' justifyContent='center' alignItems='center'>
                     {props.icon}
@@ -54,7 +54,7 @@ function SkillBox(props){
                     {props.description}
                 </Typography>
             </Box>
-        </Box>
+        </Grid>
     )
 }
 
@@ -69,9 +69,9 @@ function SkillBar(props){
     },[])
 
     return(
-        <Grid style={{width: '45%', paddingRight: '5%'}} direction='column'>
-            <Box color='white'>
-    <Typography variant='h6'>{props.name}</Typography>
+        <Grid item lg={6} xs={12} direction='column'>
+            <Box item color='white'>
+                <Typography variant='h6'>{props.name}</Typography>
             </Box>
             <Box height='20px' width='100%' style={{backgroundColor:'gray'}}>
                 <Box width='80%' height='100%' style={loader === false ? {backgroundColor: 'orange', width: '0%'} : {backgroundColor:'orange', width: props.level, transition: 'all 1s'}}>
@@ -94,8 +94,8 @@ export default function Home(){
                         Skill Set
                     </Typography>
                 </Box>
-                <Box color='orange' width='100%' height='403' mt={3}>
-                    <Grid className={styles.fullBox} container>
+                <Box color='orange' width='90%' mt={3}>
+                    <Grid spacing={5} container>
                         <SkillBox icon={<CodeIcon/>} description={descriptions.Languages} name='Languages'/>
                         <SkillBox icon={<SettingsIcon/>} description={descriptions.Frameworks} name='Frameworks'/>
                         <SkillBox icon={<FolderIcon/>} description={descriptions.Packages} name='Packages'/>
@@ -109,11 +109,11 @@ export default function Home(){
                     {/* Frameworks */}
 
                     <Box pb={3} width='100%' textAlign='center' color='white'><Typography variant='h4'>Frameworks</Typography></Box>
-
-                    <SkillBar name='React' level='95%'/>
-                    <SkillBar name='Vue' level='30%'/>
-                    <SkillBar name='Express' level='80%'/>
-                
+                        <Grid container spacing={3} style={{width: '100%'}}>
+                            <SkillBar name='React' level='95%'/>
+                            <SkillBar name='Vue' level='30%'/>
+                            <SkillBar name='Express' level='80%'/>
+                        </Grid>
                     </Grid>
                 </Box>
 
@@ -122,15 +122,16 @@ export default function Home(){
                         {/* Languages */}
 
                         <Box pb={3} width='100%' textAlign='center' color='white'><Typography variant='h4'>Languages</Typography></Box>
-
-                        <SkillBar name='Javascript' level='95%'/>
-                        <SkillBar name='CSS' level='75%'/>
-                        <SkillBar name='HTML' level='85%'/>
-                        <SkillBar name='Node' level='80%'/>
-                        <SkillBar name='MongoDB' level='85%'/>
-                        <SkillBar name='MySQL' level='60%'/>
-                        <SkillBar name='GraphQL' level='75%'/>
-                        <SkillBar name='PHP' level='40%'/>
+                        <Grid container spacing={3} style={{width: '100%'}}>
+                            <SkillBar name='Javascript' level='95%'/>
+                            <SkillBar name='CSS' level='75%'/>
+                            <SkillBar name='HTML' level='85%'/>
+                            <SkillBar name='Node' level='80%'/>
+                            <SkillBar name='MongoDB' level='85%'/>
+                            <SkillBar name='MySQL' level='60%'/>
+                            <SkillBar name='GraphQL' level='75%'/>
+                            <SkillBar name='PHP' level='40%'/>
+                        </Grid>
                     </Grid>
                 </Box>
 
@@ -138,6 +139,7 @@ export default function Home(){
                     <Grid container>
                     {/* Packages */}
                     <Box pb={3} width='100%' textAlign='center' color='white'><Typography variant='h4'>Packages</Typography></Box>
+                    <Grid container spacing={3} style={{width: '100%'}}>
                     <SkillBar name='Material-UI' level='90%'/>
                     <SkillBar name='mongoose' level='90%'/>
                     <SkillBar name='Apollo-React' level='80%'/>
@@ -145,15 +147,18 @@ export default function Home(){
                     <SkillBar name='Axios' level='80%'/>
                     <SkillBar name='Ajax' level='75%'/>
                     </Grid>
+                    </Grid>
                 </Box>
                 <Box  color='orange' pr='10vw' mb={3} mt={3}>
                     <Grid container>
                         {/* WebHosting/Servers */}
                         <Box pb={3} width='100%' textAlign='center' color='white'><Typography variant='h4'>Webhosting/Servers</Typography></Box>
+                        <Grid container spacing={3} style={{width: '100%'}}>
                         <SkillBar name='Azure' level='75%'/>
                         <SkillBar name='AWS' level='35%'/>
                         <SkillBar name='Heroku' level='80%'/>
                         <SkillBar name='Linux(CentOS7)' level='50%'/>
+                        </Grid>
                     </Grid>
                 </Box>
 
@@ -161,7 +166,9 @@ export default function Home(){
                     <Grid container>
                     {/* Version Control */}
                     <Box pb={3} width='100%' textAlign='center' color='white'><Typography variant='h4'>Version Control</Typography></Box>
+                    <Grid container spacing={3} style={{width: '100%'}}>
                     <SkillBar name='Github/Git' level='90%'/>
+                    </Grid>
                     </Grid>
                 </Box>
                     
@@ -169,10 +176,12 @@ export default function Home(){
                     <Grid container>
                         {/* Task Management */}
                         <Box pb={3} width='100%' textAlign='center' color='white'><Typography variant='h4'>Task Management</Typography></Box>
+                        <Grid container spacing={3} style={{width: '100%'}}>
                         <SkillBar name='Asana' level='75%'/>
                         <SkillBar name='Trello' level='75%'/>
                         <SkillBar name='Agile' level='60%'/>
                         <SkillBar name='Scrum' level='60%'/>
+                        </Grid>
                     </Grid>
                 </Box>
 

@@ -21,3 +21,24 @@ body {
   color: white;
   text-decoration: none;
 }
+
+.NavLinkMobile {
+  outline: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  color: white;
+  text-decoration: none;
+  height: 13%
+}
+
+.NavLinkMobile:hover {
+  color: orange;
+  transition: all .5s;
+}
+
+.linkClean {
+  text-decoration: none;
+  color: inherit
+}
