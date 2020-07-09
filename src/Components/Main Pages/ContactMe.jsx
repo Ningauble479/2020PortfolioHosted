@@ -23,8 +23,8 @@ export default function ContactMe(){
             <Typography variant='h5'>Contact Me/My Info</Typography>
             <Typography variant='h5'>Email: <a className='linkClean' style={{color: 'gray'}} href='mailto:Dvowen@cox.net'>Dvowen@cox.net</a></Typography>
             <Typography variant='h5'>Phone Number:<a className='linkClean' style={{color: 'gray'}} href='tel:949-394-8138'>949-394-8138</a></Typography>
-            <Typography variant='h5'>Linked In: <a className='linkClean' style={{color: 'gray'}} href='https://www.linkedin.com/in/devon-owen-124342138/' target='_blank'>https://www.linkedin.com/in/devon-owen-124342138/</a></Typography>
-            <Typography variant='h5'>Github: <a className='linkClean' style={{color: 'gray'}} href='https://github.com/Ningauble479' target='_blank'>https://github.com/Ningauble479</a></Typography>
+            <Typography variant='h5'>Linked In: <a className='linkClean' style={{color: 'gray'}} href='https://www.linkedin.com/in/devon-owen-124342138/'>https://www.linkedin.com/in/devon-owen-124342138/</a></Typography>
+            <Typography variant='h5'>Github: <a className='linkClean' style={{color: 'gray'}} href='https://github.com/Ningauble479'>https://github.com/Ningauble479</a></Typography>
             <Typography variant='h5'>Where I Live: Anaheim CA</Typography>
         </Grid>
         </Box>

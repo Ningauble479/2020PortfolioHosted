@@ -25,7 +25,7 @@ function PortfolioBox(props){
     let [ hovered, handleHover ] = useState(false)
 
     return(
-        <a className='linkClean' onMouseEnter={()=>{handleHover(true)}} onMouseLeave={()=>{handleHover(false)}} href={props.link} target='_blank'>
+        <a className='linkClean' onMouseEnter={()=>{handleHover(true)}} onMouseLeave={()=>{handleHover(false)}} href={props.link}>
             <Grid style={{height: '300px', width:'300px', outline: '1px solid orange', margin: '10px'}}>
                 <Box className={styles.fullBox} style={{backgroundImage: `url(${props.image})`, backgroundSize: 'cover'}}>
                     <Box color='white' overflow='hidden' style={hovered === true ? {transition: '.3s all', backgroundColor: 'rgba(0, 0, 0, .6)', height: '100%'}: {transition: '.3s all',height: '0%'}}>
