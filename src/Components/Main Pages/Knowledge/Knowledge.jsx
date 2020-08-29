@@ -10,6 +10,8 @@ import StorageIcon from '@material-ui/icons/Storage';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import FormatListNumberedIcon from '@material-ui/icons/FormatListNumbered';
 
+
+
 const useStyles = makeStyles({
     root: {
         height: '100%',
@@ -36,6 +38,7 @@ const descriptions = {
     task: 'I have used Asana for some larger projects ive worked on and generally use trello for smaller projects. I find Asana to have more depth and features but trello is much easier to use and navigate and better when extra features are not needed.'
 }
 
+//Components
 function SkillBox(props){
     return(
         <Grid item lg={4} md={6} xs={12} display='flex' flexDirection='column'>
@@ -69,13 +72,15 @@ function SkillBar(props){
     },[])
 
     return(
-        <Grid item lg={6} xs={12} direction='column'>
+        <Grid item lg={6} xs={12} direction='column' style={{border:'1px solid orange', background: '#43464b'}}>
             <Box item color='white'>
-                <Typography variant='h6'>{props.name}</Typography>
+                <Typography variant='h4'>{props.name}</Typography>
             </Box>
-            <Box height='20px' width='100%' style={{backgroundColor:'gray'}}>
-                <Box width='80%' height='100%' style={loader === false ? {backgroundColor: 'orange', width: '0%'} : {backgroundColor:'orange', width: props.level, transition: 'all 1s'}}>
-                    
+            <Box width='100%'>
+                <Box color='white' marginTop='15px' width='80%' height='100%'>
+                    <Typography variant='h6'>
+                        Used In: {props.projects}
+                    </Typography>
                 </Box>
             </Box>
         </Grid>
@@ -110,9 +115,9 @@ export default function Home(){
 
                     <Box pb={3} width='100%' textAlign='center' color='white'><Typography variant='h4'>Frameworks</Typography></Box>
                         <Grid container spacing={3} style={{width: '100%'}}>
-                            <SkillBar name='React' level='95%'/>
-                            <SkillBar name='Vue' level='30%'/>
-                            <SkillBar name='Express' level='80%'/>
+                            <SkillBar name='React' projects='Roshi Health, Ranchers Best, This Portfolio'/>
+                            <SkillBar name='Vue' projects="Testing"/>
+                            <SkillBar name='Express' projects='Roshi Health, Ranchers Best'/>
                         </Grid>
                     </Grid>
                 </Box>
@@ -123,14 +128,14 @@ export default function Home(){
 
                         <Box pb={3} width='100%' textAlign='center' color='white'><Typography variant='h4'>Languages</Typography></Box>
                         <Grid container spacing={3} style={{width: '100%'}}>
-                            <SkillBar name='Javascript' level='95%'/>
-                            <SkillBar name='CSS' level='75%'/>
-                            <SkillBar name='HTML' level='85%'/>
-                            <SkillBar name='Node' level='80%'/>
-                            <SkillBar name='MongoDB' level='85%'/>
-                            <SkillBar name='MySQL' level='60%'/>
-                            <SkillBar name='GraphQL' level='75%'/>
-                            <SkillBar name='PHP' level='40%'/>
+                            <SkillBar name='Javascript' projects='Roshi Health, Ranchers Best'/>
+                            <SkillBar name='CSS' projects='Roshi Health, Ranchers Best'/>
+                            <SkillBar name='HTML' projects='Roshi Health, Ranchers Best'/>
+                            <SkillBar name='Node' projects='Roshi Health, Ranchers Best'/>
+                            <SkillBar name='MongoDB' projects='Roshi Health, Ranchers Best'/>
+                            <SkillBar name='MySQL' projects='School Projects'/>
+                            <SkillBar name='GraphQL' projects='Roshi Health, Ranchers Best'/>
+                            <SkillBar name='PHP' projects='Testing'/>
                         </Grid>
                     </Grid>
                 </Box>
@@ -140,12 +145,12 @@ export default function Home(){
                     {/* Packages */}
                     <Box pb={3} width='100%' textAlign='center' color='white'><Typography variant='h4'>Packages</Typography></Box>
                     <Grid container spacing={3} style={{width: '100%'}}>
-                    <SkillBar name='Material-UI' level='90%'/>
-                    <SkillBar name='mongoose' level='90%'/>
-                    <SkillBar name='Apollo-React' level='80%'/>
-                    <SkillBar name='Stripe' level='85%'/>
-                    <SkillBar name='Axios' level='80%'/>
-                    <SkillBar name='Ajax' level='75%'/>
+                    <SkillBar name='Material-UI' projects='Roshi Health, Ranchers Best, This Portfolio'/>
+                    <SkillBar name='Mongoose' projects='Roshi Health, Ranchers Best'/>
+                    <SkillBar name='Apollo-React' projects='Ranchers Best'/>
+                    <SkillBar name='Stripe' projects='Roshi Health, Ranchers Best'/>
+                    <SkillBar name='Axios' projects='Roshi Health, Ranchers Best'/>
+                    <SkillBar name='Ajax' projects='School Projects'/>
                     </Grid>
                     </Grid>
                 </Box>
@@ -154,10 +159,10 @@ export default function Home(){
                         {/* WebHosting/Servers */}
                         <Box pb={3} width='100%' textAlign='center' color='white'><Typography variant='h4'>Webhosting/Servers</Typography></Box>
                         <Grid container spacing={3} style={{width: '100%'}}>
-                        <SkillBar name='Azure' level='75%'/>
-                        <SkillBar name='AWS' level='35%'/>
-                        <SkillBar name='Heroku' level='80%'/>
-                        <SkillBar name='Linux(CentOS7)' level='50%'/>
+                        <SkillBar name='Azure' projects='Roshi Health'/>
+                        <SkillBar name='AWS' projects='School Projects'/>
+                        <SkillBar name='Heroku' projects='Roshi Health, Ranchers Best'/>
+                        <SkillBar name='Linux(CentOS7)' projects='Game Server Hosting'/>
                         </Grid>
                     </Grid>
                 </Box>
@@ -167,7 +172,7 @@ export default function Home(){
                     {/* Version Control */}
                     <Box pb={3} width='100%' textAlign='center' color='white'><Typography variant='h4'>Version Control</Typography></Box>
                     <Grid container spacing={3} style={{width: '100%'}}>
-                    <SkillBar name='Github/Git' level='90%'/>
+                    <SkillBar name='Github/Git' projects='Every Project I Work On'/>
                     </Grid>
                     </Grid>
                 </Box>
@@ -177,10 +182,10 @@ export default function Home(){
                         {/* Task Management */}
                         <Box pb={3} width='100%' textAlign='center' color='white'><Typography variant='h4'>Task Management</Typography></Box>
                         <Grid container spacing={3} style={{width: '100%'}}>
-                        <SkillBar name='Asana' level='75%'/>
-                        <SkillBar name='Trello' level='75%'/>
-                        <SkillBar name='Agile' level='60%'/>
-                        <SkillBar name='Scrum' level='60%'/>
+                        <SkillBar name='Asana' projects='Roshi Health, Ranchers Best'/>
+                        <SkillBar name='Trello' projects='Testing'/>
+                        <SkillBar name='Agile' projects='Roshi Health, Ranchers Best'/>
+                        <SkillBar name='Scrum' projects='Roshi Health, Ranchers Best'/>
                         </Grid>
                     </Grid>
                 </Box>

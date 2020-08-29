@@ -6,7 +6,7 @@ import { Route } from 'react-router-dom';
 
 import Home from './Components/Main Pages/Home';
 import About from './Components/Main Pages/About';
-import Knowledge from './Components/Main Pages/Knowledge';
+import Knowledge from './Components/Main Pages/Knowledge/Knowledge';
 import Experience from './Components/Main Pages/Experience';
 import Portfolio from './Components/Main Pages/Portfolio';
 import References from './Components/Main Pages/References';

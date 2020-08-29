@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 function NavBarButton(props){
     return(
         
-            <Link to={props.link} className='NavLinkMobile'>
+            <Link to={props.link} onClick={()=>{props.setDropDown(false)}} className='NavLinkMobile'>
                 <Typography variant='h6'>
                     {props.name}
                 </Typography>
@@ -33,13 +33,13 @@ export default function DropDown(props){
                 <Box display='flex' height='9%' justifyContent='center' alignItems='center' width='100%' onClick={()=>{props.setDropDown(false)}}>
                     <CloseIcon fontSize='large'/>
                 </Box>
-                <NavBarButton name='Welcome' link='/' />
-                <NavBarButton name='About Me' link='/about' />
-                <NavBarButton name='Knowledge' link='/knowledge' />
-                <NavBarButton name='Experience' link='/experience' />
-                <NavBarButton name='Portfolio' link='/portfolio' />
-                <NavBarButton name='References' link='/references' />
-                <NavBarButton name='Contact' link='/contact' />
+                <NavBarButton setDropDown={props.setDropDown} name='Welcome' link='/' />
+                <NavBarButton setDropDown={props.setDropDown} name='About Me' link='/about' />
+                <NavBarButton setDropDown={props.setDropDown} name='Knowledge' link='/knowledge' />
+                <NavBarButton setDropDown={props.setDropDown} name='Experience' link='/experience' />
+                <NavBarButton setDropDown={props.setDropDown} name='Portfolio' link='/portfolio' />
+                <NavBarButton setDropDown={props.setDropDown} name='References' link='/references' />
+                <NavBarButton setDropDown={props.setDropDown} name='Contact' link='/contact' />
             </Grid>
         </Box>
     )

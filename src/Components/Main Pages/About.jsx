@@ -1,6 +1,9 @@
 import React from 'react'
 import { Box, Grid, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import placeholderPic from '../../Images/PlaceholderPicture.png'
+import profilePic from '../../Images/profilePic.jpg'
+
 
 const useStyles = makeStyles({
     centeredPic: {
@@ -12,7 +15,10 @@ const useStyles = makeStyles({
     picture: {
         width: '70%',
         height: '70%',
-        border: '1px solid black'
+        border: '1px solid black',
+        backgroundImage: `url(${profilePic ? profilePic : placeholderPic})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
     },
     fullBox: {
         width: '100%',
@@ -33,7 +39,6 @@ export default function About(){
         <Grid className={styles.fullBox} container>
             <Grid item className={styles.centeredPic} xs={12} lg={6}>
                 <Box className={styles.picture}>
-                    Picture did not load
                 </Box>
             </Grid>
             <Grid item container justify='center' xs={12} lg={6}>
