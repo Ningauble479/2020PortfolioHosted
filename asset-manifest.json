@@ -1,27 +1,28 @@
 {
   "files": {
     "main.css": "/2020portfoliohosted/static/css/main.cc2a0c7f.chunk.css",
-    "main.js": "/2020portfoliohosted/static/js/main.c521306e.chunk.js",
-    "main.js.map": "/2020portfoliohosted/static/js/main.c521306e.chunk.js.map",
+    "main.js": "/2020portfoliohosted/static/js/main.e29b300d.chunk.js",
+    "main.js.map": "/2020portfoliohosted/static/js/main.e29b300d.chunk.js.map",
     "runtime-main.js": "/2020portfoliohosted/static/js/runtime-main.4da4c028.js",
     "runtime-main.js.map": "/2020portfoliohosted/static/js/runtime-main.4da4c028.js.map",
-    "static/js/2.221cafa0.chunk.js": "/2020portfoliohosted/static/js/2.221cafa0.chunk.js",
-    "static/js/2.221cafa0.chunk.js.map": "/2020portfoliohosted/static/js/2.221cafa0.chunk.js.map",
+    "static/js/2.eedbd44d.chunk.js": "/2020portfoliohosted/static/js/2.eedbd44d.chunk.js",
+    "static/js/2.eedbd44d.chunk.js.map": "/2020portfoliohosted/static/js/2.eedbd44d.chunk.js.map",
     "index.html": "/2020portfoliohosted/index.html",
-    "precache-manifest.50add43093af50828a85c933e351f50d.js": "/2020portfoliohosted/precache-manifest.50add43093af50828a85c933e351f50d.js",
+    "precache-manifest.67ace3db2526e906f416b79da34380a2.js": "/2020portfoliohosted/precache-manifest.67ace3db2526e906f416b79da34380a2.js",
     "service-worker.js": "/2020portfoliohosted/service-worker.js",
     "static/css/main.cc2a0c7f.chunk.css.map": "/2020portfoliohosted/static/css/main.cc2a0c7f.chunk.css.map",
-    "static/js/2.221cafa0.chunk.js.LICENSE.txt": "/2020portfoliohosted/static/js/2.221cafa0.chunk.js.LICENSE.txt",
+    "static/js/2.eedbd44d.chunk.js.LICENSE.txt": "/2020portfoliohosted/static/js/2.eedbd44d.chunk.js.LICENSE.txt",
     "static/media/DnDProject.png": "/2020portfoliohosted/static/media/DnDProject.bddc459f.png",
     "static/media/RanchersBest.png": "/2020portfoliohosted/static/media/RanchersBest.cb2dac21.png",
     "static/media/RoshiHealth.png": "/2020portfoliohosted/static/media/RoshiHealth.d4d18a2a.png",
     "static/media/Tasky.png": "/2020portfoliohosted/static/media/Tasky.77758e9a.png",
-    "static/media/wp1828901-programmer-wallpapers.jpg": "/2020portfoliohosted/static/media/wp1828901-programmer-wallpapers.44bd7153.jpg"
+    "static/media/profilePic.jpg": "/2020portfoliohosted/static/media/profilePic.7bfc30ec.jpg",
+    "static/media/wp1828901-programmer-wallpapers.jpg": "/2020portfoliohosted/static/media/wp1828901-programmer-wallpapers.733a135b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4da4c028.js",
-    "static/js/2.221cafa0.chunk.js",
+    "static/js/2.eedbd44d.chunk.js",
     "static/css/main.cc2a0c7f.chunk.css",
-    "static/js/main.c521306e.chunk.js"
+    "static/js/main.e29b300d.chunk.js"
   ]
 }
