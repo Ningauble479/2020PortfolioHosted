@@ -60,12 +60,7 @@ function Navbar(props){
                     <Box>
                         <Grid className={styles.fillBox} container>
                             <NavBarButton name='Welcome' link='/' />
-                            <NavBarButton name='About Me' link='/about' />
-                            <NavBarButton name='Knowledge' link='/knowledge' />
-                            <NavBarButton name='Experience' link='/experience' />
                             <NavBarButton name='Portfolio' link='/portfolio' />
-                            <NavBarButton name='References' link='/references' />
-                            <NavBarButton name='Contact' link='/contact' />
                         </Grid>
                     </Box>
                     </Hidden>

@@ -31,9 +31,9 @@ function ExperienceBox(props){
     return(
         <Grid item container style={{minHeight:'400px', padding: '25px'}}>
                 <Grid item container justify='center' alignItems='center' xs={12} lg={4}>
-    <Box color='white' display='flex' border='10px solid white' padding='25px' justifyContent='center' alignItems='center'><Typography variant='h3'>{props.date}</Typography></Box>
+                    <Box color='#1b1b1b' display='flex' border='10px solid #1b1b1b' padding='25px' justifyContent='center' alignItems='center'><Typography variant='h3'>{props.date}</Typography></Box>
                 </Grid>
-                <Grid item container direction='column' style={{padding: '50px', color: 'white'}} xs={12} lg={8}>
+                <Grid item container direction='column' style={{padding: '50px', color: '#1b1b1b'}} xs={12} lg={8}>
                     <Box pb={2}>
                         <Typography variant='h3'>{props.name}</Typography>
                     </Box>
@@ -55,7 +55,7 @@ export default function Experience(){
     const styles = useStyles()
 
     return(
-        <Box className={styles.fullBox} style={{backgroundColor: '#1b1b1b'}} overflow='auto'>
+        <Box className={styles.fullBox} style={{backgroundColor: 'white'}} overflow='auto'>
             <Grid style={{flexWrap: 'no-wrap'}} container direction='column'>
                 <Grid style={{color: 'orange', textAlign: 'center', paddingTop: '25px'}} item>
                     <Typography variant='h2'>

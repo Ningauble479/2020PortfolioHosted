@@ -23,7 +23,9 @@ const useStyles = makeStyles({
   mainBox: {
     height: '90vh',
     marginTop: '10vh',
-    width: '100%'
+    width: '100%',
+    overflowY: 'auto',
+    overflowX: 'hidden'
   }
 })
 
